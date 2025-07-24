@@ -1,0 +1,68 @@
+.container {
+  background-color: #111;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.widgets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.widget {
+  background: linear-gradient(135deg, #a100ff, #c600ff);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  width: 200px;
+  box-shadow: 0 0 10px #a100ff77;
+  border: 1px solid #8000ff;
+  transition: transform 0.2s ease;
+}
+
+.widget:hover {
+  transform: translateY(-6px);
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.value {
+  font-size: 2.7rem;
+  font-weight: bold;
+  color: #fff;
+}
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.sk-circle {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #a100ff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
